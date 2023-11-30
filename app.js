@@ -79,3 +79,44 @@
 // Methods Inside Objects
 
 // Exaple-1
+const programmingLang = {
+    langName: "Java Script",
+    libraries: ["React", "JQuery"],
+    frameworks: {
+        angular: {
+            learningCurve: "Hard", architecture: "Modular"
+        },
+        vue: {
+            learningCurve: "Medium", architecture: "MVC"
+        },
+    },
+};
+console.log(programmingLang.frameworks.angular.learningCurve);
+
+// Calc Funtion
+const student1 = {
+    fullName: "Mimi",
+    birthYear: 2003,
+    calcAge: function () {
+        return 2023 - this.birthYear;
+    },
+};
+console.log(student1.calcAge());
+
+const student2 = student1;
+
+console.log(student2);
+
+// Mutate or Modify Properties
+student2.fullName = "Mimi Sultana";
+
+// Mutated Result
+console.log(student2.fullName);
+
+// Add New Property
+student2.hobby = "Sleeping";
+student2.siblings = 5;
+
+// Add Result
+console.log(student2);
+console.log(student1)
